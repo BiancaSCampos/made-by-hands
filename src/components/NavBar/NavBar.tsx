@@ -1,13 +1,19 @@
-import {Component} from 'react';
-import { ContainerNavBar } from './styles';
-
+import { Component } from 'react';
+import { InnerDiv, OuterDiv } from './styles';
+import logoMBH from "../../assets/images/logo.png"
 class NavBar extends Component {
 
   render() {
-    return(
-      <ContainerNavBar>
-        <h1>Oi</h1>
-      </ContainerNavBar>
+    return (
+      <OuterDiv>
+
+        <InnerDiv>
+          <img alt="logoBrand" src={logoMBH} />
+           <input type="search"></input>
+           <a href="#">Cadastre-se</a>
+        </InnerDiv>
+
+      </OuterDiv>
     )
   }
 }
